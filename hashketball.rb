@@ -142,6 +142,7 @@ def shoe_size(player_name)
     value[:players].each do |inner_key|
       if inner_key[:player_name] == player_name
         return inner_key[:shoe]
+        binding.pry 
       end 
     end
   end 
